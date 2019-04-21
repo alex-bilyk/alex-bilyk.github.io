@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Object-detail</title>
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-search" viewBox="0 0 52.966 52.966">
+        <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+        c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+        C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+        S32.459,40,21.983,40z"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 15 15">
+        <g transform="translate(-645 -543)"><image width="15" height="15" transform="translate(645 543)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABI0lEQVQ4T5XTvyuHURTH8ZfNQFKUVRmUlJQMRmWwWZTkR5JBLCL5MfqREgZSklBSFlls/AU2SUkZDZSUZNSp5+bp66t873TvOff9eZ7zOeeW+VmdGEQ5brCLD1RiHK34wjGuAivL2CnUYTkDujJgEjvYwjUqsIhnbATciGmM5v4itm24RAceCnL7WA94BQd4LLgQxx6cF4k3YCTgqCFqLXUdB3yEoVLJ4AJexR6eShCox1jALejFfAlw+HSWWhV1r+HuHwJNmA2fElyNU0z84XrSDJe30Ye3BEeyNnM+BqNY22IeNrPOvOQnLCkngZi4+1wJzZmxw3hN8fyXU6wGh5jDLdqxgAG85z0pBke+Cie4QDf68Vlo5l9wEpjBUvaafjXiG9dANLi//IX9AAAAAElFTkSuQmCC"/></g>
+    </symbol>
+    <symbol id="icon-eye" viewBox="0 0 16 10">
+        <g transform="translate(-933 -290)"><image width="16" height="10" transform="translate(933 290)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAA50lEQVQoU33SOy8FQBAF4O92hEpDIl6JH0BJ6VUqRKOVuFH4OQqhUKoodJ4dSn6AxCOR0KgIFTLJXNks9241Z+bsyZ4z2/D3TGINMxjJ8QPOsY2b8kqjAH3YxEr2nnGI4CyiP/t72MBr4JbAOI4xlqQjLOMtcQ8OsJD4LuvbEBjCFQZz+InhxLv4wjruEVa6k/eEqRC4wHRh5QxzOMVs9qOer3oxuuwkcJJCQfxP9FegtvCR6Y9iK3NaRTz5EV21hcB1iBHoEt6T3Iv9diG27NdrfMk1fucaBzqtsfwbE2i2+Ug7uC7JP0/yN88dUhqIAAAAAElFTkSuQmCC"/></g>
+    </symbol>
+</svg>
+
+<header class="header header_search">
+    <div class="header__nav">
+        <div class="header__nav__inner container">
+            <nav>
+                <ul>
+                    <li><a href="#">Новые отзывы</a></li>
+                    <li><a href="#">Места на карте рядом с вами</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Пользователи</a></li>
+                    <li><a href="#">Денежные бонусы</a></li>
+                </ul>
+            </nav>
+            <svg class="icon icon-search-js">
+                <use xlink:href="#icon-search"></use>
+            </svg>
+            <div class="header__nav__search">
+                <form action="#" class="form">
+                    <div class="form__field">
+                        <input type="text" class="input" placeholder="Поиск">
+                    </div>
+                    <button class="btn btn-effect">Поиск</button>
+                </form>
+            </div>
+            <div class="header__nav__mob-logo">
+                <a href="#"><img src="img/logo.png" alt="Otzoviokon"></a>
+            </div>
+            <div class="header__nav__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="header__info">
+        <div class="header__info__inner container">
+            <div class="header__info__logo">
+                <a href="#"><img src="img/logo.png" alt="Otzoviokon"></a>
+            </div>
+            <div class="header__info__search">
+                <form action="#" class="form">
+                    <div class="form__fields">
+                        <div class="form__field">
+                            <input type="text" class="input" placeholder="Поиск">
+                            <button class="btn">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="header__info__content">
+                <a href="#" class="btn btn_info">Добавить отзыв</a>
+                <a href="#" class="btn btn_primary">Войти</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__category">
+        <div class="container">
+            <div class="header__category__inner">
+                <div class="header__category__all-title">
+                    <a href="javascript:void(0)">Все категории</a>
+                </div>
+                <div class="header__category__all-list">
+                    <ul>
+                        <li>
+                            <a href="#">Бытовая техника</a>
+                            <ul class="header__category__sub-list">
+                                <li><strong><a href="#">Бытовая техника</a></strong></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Бытовая техника</a>
+                            <ul class="header__category__sub-list">
+                                <li><strong><a href="#">Бытовая техника</a></strong></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Бытовая техника</a>
+                            <ul class="header__category__sub-list">
+                                <li><strong><a href="#">Бытовая техника</a></strong></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Бытовая техника</a>
+                            <ul class="header__category__sub-list">
+                                <li><strong><a href="#">Бытовая техника</a></strong></li>
+                                <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Холодильники</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__category__main">
+                    <ul>
+                        <li><a href="#">Красота и здоровье</a></li>
+                        <li><a href="#">Для детей</a></li>
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">Компании</a></li>
+                        <li><a href="#">Техника</a></li>
+                        <li><a href="#">Кино и ТВ</a></li>
+                        <li><a href="#">Туризм</a></li>
+                        <li><a href="#">Авто/Мото</a></li>
+                        <li><a href="#">Книги</a></li>
+                        <li><a href="#">Покупки</a></li>
+                    </ul>
+                </div>
+                <div class="header__category__tablet-buttons">
+                    <a href="#" class="btn btn_info">Добавить отзыв</a>
+                    <a href="#" class="btn btn_primary">Войти</a>
+                </div>
+                <div class="header__category__mob-buttons">
+                    <a href="#" class="btn btn_info">Добавить отзыв</a>
+                    <a href="#" class="btn btn_primary"><img src="img/icons/icon-log-in.png" alt="log-in"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="bread-crumbs container">
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><span>Пылесосы</span></li>
+    </ul>
+</div>
+
+<section class="object">
+    <div class="container">
+        <div class="object__main">
+            <div class="obj">
+                <div class="obj__img-wrapper">
+                    <img src="img/goods/6.png" alt="6">
+                </div>
+                <div class="obj__info">
+                    <h3>Пылесос с пылесборником Samsung SC20M2540JN</h3>
+                    <ul class="rating">
+                        <li class="rating_active"></li>
+                        <li class="rating_active"></li>
+                        <li class="rating_active"></li>
+                        <li class="rating_active"></li>
+                        <li></li>
+                    </ul>
+                    <span>Среднее 4,7</span>
+                    <div class="obj__info__feedback">
+                        <a href="#">3 отзыва</a>
+                    </div>
+                    <div class="obj__info__buttons-wrapper">
+                        <a href="#" class="btn">Добавить свой отзыв</a>
+                    </div>
+                    <div class="obj__info__dop">
+                        <div class="obj__info__dop__links">
+                            <a href="#">Сообщить о неточности</a>
+                            <a href="#">Подписаться на новые отзывы</a>
+                        </div>
+                        <a href="#" class="obj__info__dop__spec">
+                            <svg class="icon">
+                                <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            Добавить в избранное
+                        </a>
+                    </div>
+                </div>
+                <div class="obj__links">
+                    <a href="#" class="obj__links__spec">
+                        <svg class="icon">
+                            <use xlink:href="#icon-heart"></use>
+                        </svg>
+                        Добавить в избранное
+                    </a>
+                    <a href="#">Сообщить о неточности</a>
+                    <a href="#">Подписаться на новые отзывы</a>
+                </div>
+            </div>
+            <div class="banners">
+                <img src="img/banners/2.png" alt="2">
+            </div>
+        </div>
+    </div>
+    <div class="object-det">
+        <div class="object-det__inner container">
+            <div class="object-det__content">
+                <div class="object-det__items">
+                    <div class="object-det__item">
+                        <div class="object-det__item__main">
+                            <div class="object-det__item__img-wrapper">
+                                <img src="img/profile/1.png" alt="1">
+                            </div>
+                            <div class="object-det__item__about">
+                                <div class="object-det__item__about__info">
+                                    <h3><a href="#">Александр, Москва</a></h3>
+                                    <div class="object-det__item__about__date-registr">На сайте с 01.03.2016</div>
+                                    <ul class="rating">
+                                        <li class="rating_active"></li>
+                                        <li class="rating_active"></li>
+                                        <li class="rating_active"></li>
+                                        <li class="rating_active"></li>
+                                        <li class="rating_active"></li>
+                                    </ul>
+                                </div>
+                                <div class="object-det__item__about__dop">
+                                    <div class="object-det__item__about__rep">Репутация: <span>+143</span></div>
+                                    <div class="object-det__item__about__reviews">
+                                        Отзывов: 36
+                                    </div>
+                                    <div class="object-det__item__about__views">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-eye"></use>
+                                        </svg>
+                                        Просмотров отзывов всего: 36
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="object-det__item__dop">
+                            <div class="object-det__item__dop__rep">Репутация: <span>+143</span></div>
+                            <div class="object-det__item__dop__reviews">
+                                Отзывов: 36
+                            </div>
+                            <div class="object-det__item__dop__views">
+                                <svg class="icon">
+                                    <use xlink:href="#icon-eye"></use>
+                                </svg>
+                                Просмотров отзывов всего: 36
+                            </div>
+                        </div>
+                        <div class="object-det__item__feedback">
+                            <h5>Отличная кофемолка!</h5>
+                            <p>Вжик-вжик и ароматный молотый кофе готов, а также сахарная пудра, овсяная мука, гранитная крошка..СТОП! Так с чем же справляется кофемолка BOSCH, а что не следует молоть НИ В КОЕМ СЛУЧАЕ. Рецепт необычного овсяного печенья прилагается</p>
+                            <p>В тот момент, когда меня осенило перейти на свежесваренный кофе, встал вопрос о приобретении кофемолки. Критериями отбора явились относительно бюджетная стоимость, компактность, ну и качество измельчительного агрегата. Мой выбор пал на бренд BOSCH, к которому у меня есть доверие, ибо я уже являюсь счастливой обладательницей его стационарного миксера.</p>
+                            <p>Среди нескольких моделей я выбрала кофемолку BOSCH MKM-6003 в классическом чёрном цвете.</p>
+                            <p>Первоначально кофемолка была упакована в картонную коробку, которая сразу же была утилизирована. Внутри коробки помимо электрического прибора находилась ещё и инструкция по эксплуатации, которую я советую всё же прочитать перед началом пользования.</p>
+                            <div class="object-det__item__estimate">
+                                <div class="object-det__item__estimate__adv">
+                                    Достоинства:
+                                    <ul>
+                                        <li>качество на уровне</li>
+                                        <li>компактная</li>
+                                        <li>можно регулировать степень помола</li>
+                                        <li>ножи из нержавеющей стали</li>
+                                        <li>простая в использовании</li>
+                                        <li>сдержанное и стильное оформление</li>
+                                        <li>хорошо измельчает</li>
+                                    </ul>
+                                </div>
+                                <div class="object-det__item__estimate__disadv">
+                                    Недостатки:
+                                    <ul>
+                                        <li>нет</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="object-det__items__buttons-wrapper">
+                        <a href="#" class="btn btn_info">Читать весь отзыв</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banners">
+                <img src="img/banners/3.png" alt="3">
+            </div>
+            <div class="object-det__reviews-wrapper">
+                <div class="object-det__reviews__head">
+                    <h3>Похожее</h3>
+                </div>
+                <div class="reviews__items">
+                    <div class="reviews__item">
+                        <div class="reviews__item__img-wrapper">
+                            <img src="img/goods/5.png" alt="5">
+                        </div>
+                        <div class="reviews__item__info-wrapper">
+                            <h3><a href="#">Пылесос с пылесборником Samsung SC20M2540JN</a></h3>
+                            <div class="reviews__item__static">
+                                <ul class="rating">
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li></li>
+                                </ul>
+                                <div class="reviews__item__static__feedback">
+                                    <a href="#">3 отзыва</a>
+                                </div>
+                            </div>
+                            <p>Длительный стресс, активный ритм жизни и ограниченная микроциркуляция могут приводить к появлению покраснений и сосудистых звездочек на коже. Крем с арникой и натуральным экстрактом...</p>
+                            <div class="reviews__item__buttons-wrapper">
+                                <a href="#" class="btn btn_info">Читать весь отзыв</a>
+                                <a href="#" class="btn btn_primary">Написать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item__img-wrapper">
+                            <img src="img/goods/5.png" alt="5">
+                        </div>
+                        <div class="reviews__item__info-wrapper">
+                            <h3><a href="#">Пылесос с пылесборником Samsung SC20M2540JN</a></h3>
+                            <div class="reviews__item__static">
+                                <ul class="rating">
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li></li>
+                                </ul>
+                                <div class="reviews__item__static__feedback">
+                                    <a href="#">3 отзыва</a>
+                                </div>
+                            </div>
+                            <p>Длительный стресс, активный ритм жизни и ограниченная микроциркуляция могут приводить к появлению покраснений и сосудистых звездочек на коже. Крем с арникой и натуральным экстрактом...</p>
+                            <div class="reviews__item__buttons-wrapper">
+                                <a href="#" class="btn btn_info">Читать весь отзыв</a>
+                                <a href="#" class="btn btn_primary">Написать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item__img-wrapper">
+                            <img src="img/goods/5.png" alt="5">
+                        </div>
+                        <div class="reviews__item__info-wrapper">
+                            <h3><a href="#">Пылесос с пылесборником Samsung SC20M2540JN</a></h3>
+                            <div class="reviews__item__static">
+                                <ul class="rating">
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li class="rating_active"></li>
+                                    <li></li>
+                                </ul>
+                                <div class="reviews__item__static__feedback">
+                                    <a href="#">3 отзыва</a>
+                                </div>
+                            </div>
+                            <p>Длительный стресс, активный ритм жизни и ограниченная микроциркуляция могут приводить к появлению покраснений и сосудистых звездочек на коже. Крем с арникой и натуральным экстрактом...</p>
+                            <div class="reviews__item__buttons-wrapper">
+                                <a href="#" class="btn btn_info">Читать весь отзыв</a>
+                                <a href="#" class="btn btn_primary">Написать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="obj-cm">
+    <div class="container">
+        <div class="obj-cm__add">
+            <form action="#">
+                <div class="add-cm__desc__field">
+                    <div class="add-cm__desc__field__title">
+                        <p>Комментарий</p>
+                    </div>
+                    <textarea name="review" class="input input_primary" required></textarea>
+                </div>
+                <div class="add-cm__desc__action">
+                    <button class="btn btn_info">Оставить комментарий</button>
+                </div>
+            </form>
+        </div>
+        <div class="object__reviews__items">
+            <div class="object__reviews__item">
+                <div class="object__reviews__item__main">
+                    <div class="object__reviews__item__img-wrapper">
+                        <a href="#"><img src="img/profile/1.png" alt="1"></a>
+                    </div>
+                    <div class="object__reviews__item__details">
+                        <div class="object__reviews__item__title">
+                            <h3><a href="#">Александр, Москва</a></h3>
+                        </div>
+                        <div class="object__reviews__item__date">
+                            12.01.2019
+                        </div>
+                    </div>
+                </div>
+                <div class="object__reviews__item__feedback">
+                    <p>Длительный стресс, активный ритм жизни и ограниченная микроциркуляция могут приводить к появлению покраснений и сосудистых звездочек на коже. Крем с арникой и натуральным экстрактом конского каштана мгновенно успокаивает, снимает покраснения, укрепляет сосуды и улучшает цвет лица...</p>
+                    <a href="#" class="btn btn_info">Ответить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__main">
+            <nav>
+                <ul>
+                    <li><a href="#">Новые отзывы</a></li>
+                    <li><a href="#">Места на карте</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Пользователи</a></li>
+                    <li><a href="#">Денежные бонусы</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Правила сайта</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                Поделиться:
+                <ul>
+                    <li><a href="#" rel="nofollow"><img src="img/icons/icon-facebook.png" alt="fb">facebook</a></li>
+                    <li><a href="#" rel="nofollow"><img src="img/icons/icon-twitter.png" alt="tw">twitter</a></li>
+                    <li><a href="#" rel="nofollow"><img src="img/icons/icon-google-plus.png" alt="gp">google-plus</a></li>
+                    <li><a href="#" rel="nofollow"><img src="img/icons/icon-vk.png" alt="vk">vk</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copy">
+            © 2009-2019. Отзовикон. Все права защищены. <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Start block with js files-->
+<script src="js/jquery.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Finish block with js files-->
+</body>
+</html>

@@ -107,4 +107,7 @@ $(document).ready(function() {
         $('.object__info').addClass('content_active');
     });
 
+    $('.path-list__title').on('click', function () {
+       $(this).siblings('ul').slideToggle(300);
+    });
 });

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Вывоз мусора в Петрозаводске</title>
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-contact">
+
+<svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow" viewBox="0 0 11 6">
+        <path d="M10 1L5.5 5.5L1 1"/>
+    </symbol>
+    <symbol id="icon-cross" viewBox="0 0 22 22">
+        <g>
+            <path d="M21 1L1 21M1 1L21 21" stroke="currentColor"/>
+        </g>
+    </symbol>
+</svg>
+
+<header class="header header-inner">
+    <h1 style="position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">Вывоз мусора в Петрозаводске</h1>
+    <div class="header__top-wrapper">
+        <div class="header__mob-menu">
+            <div class="header__mob-menu__inner container">
+                <button class="header__burger header__burger_inner">
+                    <span></span>
+                </button>
+                <a href="/" class="header__mob-menu__logo"><img src="img/icons/icon-truck.png" alt="home"></a>
+                <button class="header__mob-menu__close"></button>
+                <div class="header__mob-menu__nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#about">О НАС</a></li>
+                            <li><a href="#">БЛОГ</a></li>
+                            <li><a href="#services">СМЕЖНЫЕ УСЛУГИ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__inner container">
+            <button class="header__burger header__burger_out">
+                <span></span>
+            </button>
+            <div class="header__nav">
+                <nav>
+                    <ul>
+                        <li><a href="#about">О НАС</a></li>
+                        <li><a href="#">БЛОГ</a></li>
+                        <li><a href="#services">СМЕЖНЫЕ УСЛУГИ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__logo-wrapper bg-block">
+                <a href="/">
+                    <img src="img/logo.png" alt="oooksu">
+                </a>
+                <span>в Петрозаводске</span>
+                <div class="header__logo-wrapper__buttons-wrapper">
+                    <a href="#" class="btn btn_main getCallRequestModal-js">заказать <img src="img/icons/icon-phone.png" alt="phone"> звонок</a>
+                </div>
+            </div>
+            <div class="header__data">
+                <div class="header__data__number main-number">
+                    <a href="tel:8142266366">
+                   <span class="main-number__small-wrapper">
+                       <span class="main-number__tel">8142</span>
+                       <span class="main-number__text">телефон</span>
+                   </span>
+                        <span class="main-number__big-wrapper">
+                       <span class="main-number__tel">266-366</span>
+                   </span>
+                    </a>
+                </div>
+                <div class="header__data__buttons-wrapper">
+                    <a href="#" class="btn btn_main getCallRequestModal-js">заказать <img src="img/icons/icon-phone.png" alt="phone"> звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__content">
+        <div class="container">
+            <div class="header__content__info">
+                <span>ЗВОНИТЕ, И МЫ</span>
+                ВЫВЕЗЕМ МУСОР В НУЖНЫЙ ДЕНЬ
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="contact">
+    <div class="contact__inner container">
+        <div class="bread-crumbs">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><span>Контакты</span></li>
+            </ul>
+        </div>
+        <div class="contact__head">
+            <h2 class="section__title section__title-bg">НАШИ КОНТАКТЫ</h2>
+        </div>
+        <div class="contact__content">
+            <div class="contact__info">
+                <a href="/">
+                    <img src="img/logo_white.png" alt="ВЫВОЗ МУСОРА">
+                </a>
+                <div class="info-pos">
+                    респ. Карелия, г. Петрозавоск, ул. Судостроительная, д. 1а
+                </div>
+                <div class="main-number">
+                    <a href="tel:8142266366">
+                   <span class="main-number__small-wrapper">
+                       <span class="main-number__tel">8142</span>
+                       <span class="main-number__text">телефон</span>
+                   </span>
+                        <span class="main-number__big-wrapper">
+                       <span class="main-number__tel">266-366</span>
+                   </span>
+                    </a>
+                </div>
+                <!--<a href="#" class="btn btn_default">ПОКАЗАТЬ НА КАРТЕ</a>-->
+            </div>
+            <div class="contact__map">
+                <div id="map-2"></div>
+            </div>
+            <div class="contact__form">
+                <span class="ask-question-elem">ЗАДАТЬ ВОПРОС</span>
+                <div class="ask-question-form-wrapper bg-block">
+                    <form action="#" class="form requestForm-js">
+                        <div class="form__fields">
+                            <div class="form__field">
+                                <input type="text" class="input" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__field">
+                                <input type="text" class="input inputPhone-js" placeholder="Ваш телефон" minlength="1" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                            </div>
+                            <div class="form__field">
+                                <textarea name="message" class="input" placeholder="Ваш вопрос" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form__action">
+                            <button class="btn btn_default">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services services_inner">
+    <div class="container">
+        <div class="services__head">
+            <h2 class="section__title section__title-bg">СМЕЖНЫЕ УСЛУГИ</h2>
+            <p>Также мы оказываем смежные услуги, такие, как:</p>
+        </div>
+        <div class="services__items-wrapper">
+            <div class="services__items">
+                <div class="services__item-wrapper">
+                    <a href="#">
+                        <div class="services__item">
+                            <div class="services__item__img-wrapper">
+                                <img src="img/services/1.png" alt="1">
+                            </div>
+                            <div class="services__item__info">
+                                <span>Погрузка и перевозка металлолома</span> (при наличии право-устанавливающих документов на него)
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="services__item-wrapper">
+                    <a href="#">
+                        <div class="services__item">
+                            <div class="services__item__img-wrapper">
+                                <img src="img/services/2.png" alt="2">
+                            </div>
+                            <div class="services__item__info">
+                                <span>Снос, вырубка,</span> санитарная резка деревьев и
+                                кустарников, с утилизацией
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="services__item-wrapper">
+                    <a href="#">
+                        <div class="services__item">
+                            <div class="services__item__img-wrapper">
+                                <img src="img/services/3.png" alt="3">
+                            </div>
+                            <div class="services__item__info">
+                                <span>Демонтаж, разборка</span> деревянных зданий и сооружений, с утилизацией на санкционированной свалке ТКО
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="services__item-wrapper">
+                    <a href="#">
+                        <div class="services__item">
+                            <div class="services__item__img-wrapper">
+                                <img src="img/services/4.png" alt="4">
+                            </div>
+                            <div class="services__item__info">
+                                <span>Уборка</span> несанкционированных свалок с предостав-лением всех документов и работой по 44 ФЗ
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="services__items__arrow services__items__arrow-prev slider__arrow_main slider__arrow_main-prev">
+                <svg class="icon icon-arrow">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </div>
+            <div class="services__items__arrow services__items__arrow-next slider__arrow_main slider__arrow_main-next">
+                <svg class="icon icon-arrow">
+                    <use xlink:href="#icon-arrow"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-loc">
+    <div class="map-loc__head">
+        <div class="map-loc__head__inner container">
+            <a href="/" class="map-loc__head__logo">
+                <img src="img/logo_white.png" alt="ВЫВОЗ МУСОРА">
+            </a>
+            <div class="info-pos">
+                респ. Карелия, г. Петрозавоск, ул. Судостроительная, д. 1а
+            </div>
+            <div class="map-loc__head__number main-number">
+                <a href="tel:8142266366">
+                   <span class="main-number__small-wrapper">
+                       <span class="main-number__tel">8142</span>
+                       <span class="main-number__text">телефон</span>
+                   </span>
+                    <span class="main-number__big-wrapper">
+                       <span class="main-number__tel">266-366</span>
+                   </span>
+                </a>
+            </div>
+            <div class="map-loc__head__question-wrapper">
+                <span class="map-loc__head__question ask-question-elem">ЗАДАТЬ ВОПРОС</span>
+            </div>
+        </div>
+    </div>
+    <div class="map-loc__inner">
+        <div id="map"></div>
+        <div class="map-loc__form ask-question-form-wrapper bg-block">
+            <form action="#" class="form requestForm-js">
+                <div class="form__fields">
+                    <div class="form__field">
+                        <input type="text" class="input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" class="input inputPhone-js" placeholder="Ваш телефон" minlength="1" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    </div>
+                    <div class="form__field">
+                        <textarea name="message" class="input" placeholder="Ваш вопрос" required></textarea>
+                    </div>
+                </div>
+                <div class="form__action">
+                    <button class="btn btn_default">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__item footer__info">
+            <nav class="footer__info__nav">
+                <ul>
+                    <li><a href="#about">О НАС</a></li>
+                    <li><a href="#">БЛОГ</a></li>
+                    <li><a href="#services">СМЕЖНЫЕ УСЛУГИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+            <div class="footer__info__data">
+                <a href="#" class="footer__data__link getPDPPModal-js">Политика обработки персональных данных</a>
+                <div class="info-pos">
+                    респ. Карелия, г. Петрозавоск, ул. Судостроительная, д. 1а
+                </div>
+            </div>
+        </div>
+        <div class="footer__item footer__action">
+            <div class="main-number">
+                <a href="tel:8142266366">
+                   <span class="main-number__small-wrapper">
+                       <span class="main-number__tel">8142</span>
+                       <span class="main-number__text">телефон</span>
+                   </span>
+                    <span class="main-number__big-wrapper">
+                       <span class="main-number__tel">266-366</span>
+                   </span>
+                </a>
+            </div>
+            <div class="footer__action__buttons-wrapper">
+                <a href="#" class="btn btn_main getCallRequestModal-js">заказать <img src="img/icons/icon-phone.png" alt="phone"> звонок</a>
+            </div>
+        </div>
+        <div class="footer__pos">
+            <div class="info-pos">
+                респ. Карелия, г. Петрозавоск, ул. Судостроительная, д. 1а
+            </div>
+        </div>
+        <div class="footer__item">
+            <a href="/" class="footer__logo">
+                <img src="img/logo_white.png" alt="ВЫВОЗ МУСОРА">
+            </a>
+            <div class="footer__copy">Copyright 2019 Все права защищены</div>
+        </div>
+        <div class="footer__policy_mob">
+            <a href="#" class="getPDPPModal-js">Политика обработки персональных данных</a>
+        </div>
+    </div>
+</footer>
+
+<div class="overlay"></div>
+<div class="modal-wrapper">
+    <div class="modal modal_default modal_green" id="getCallRequestModal">
+        <div class="modal__inner">
+            <h3 class="section__title section__title-bg">ОБРАТНЫЙ ЗВОНОК</h3>
+            <form action="#" class="form">
+                <div class="form__fields">
+                    <div class="form__field">
+                        <input type="text" class="input input_default" minlength="1" required placeholder="Ваше имя">
+                    </div>
+                    <div class="form__field">
+                        <input type="tel" class="input input_default inputPhone-js" placeholder="Ваш телефон"  minlength="1" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    </div>
+                </div>
+                <div class="form__field-check">
+                    <label><input type="checkbox" required><span>Я согласен на обработку <a href="#">персональных данных</a></span></label>
+                </div>
+                <div class="form__action">
+                    <button class="btn btn_main">заказать <img src="img/icons/icon-phone.png" alt="phone"> звонок</button>
+                </div>
+            </form>
+        </div>
+        <button class="modal__close modal-close-js">
+            <svg class="icon">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="modal modal_default modal_blue" id="getOrderModal">
+        <div class="modal__inner">
+            <h3 class="section__title section__title-bg">ЗАКАЗАТЬ ВЫВОЗ МУСОРА</h3>
+            <form action="#" class="form">
+                <div class="form__fields">
+                    <div class="form__field">
+                        <input type="text" class="input input_default" minlength="1" required placeholder="Ваше имя">
+                    </div>
+                    <div class="form__field">
+                        <input type="tel" class="input input_default inputPhone-js" placeholder="Ваш телефон"  minlength="1" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                    </div>
+                </div>
+                <div class="form__field-check">
+                    <label><input type="checkbox" required><span>Я согласен на обработку <a href="#">персональных данных</a></span></label>
+                </div>
+                <div class="form__action">
+                    <button class="btn btn_default">заказать вывоз мусора</button>
+                </div>
+            </form>
+        </div>
+        <button class="modal__close modal-close-js">
+            <svg class="icon">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="modal modal_default modal_blue" id="getThanksRequestModal">
+        <div class="modal__inner">
+            <h3 class="section__title section__title-bg">Спасибо, ваша заявка отправлена</h3>
+        </div>
+        <button class="modal__close modal-close-js">
+            <svg class="icon">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="modal modal_default modal_blue" id="getThanksPaymentModal">
+        <div class="modal__inner">
+            <h3 class="section__title section__title-bg">Спасибо, ваш расчет отправлен</h3>
+        </div>
+        <button class="modal__close modal-close-js">
+            <svg class="icon">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="modal modal_default modal_green modal-pdpp" id="getPDPPModal">
+        <div class="modal__inner">
+            <h3 class="section__title section__title-bg">Политика обработки персональных данных</h3>
+            <div class="modal-pdpp__text scrollbar_main">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi aperiam at autem debitis distinctio dolorem ducimus ea earum eligendi et, eum exercitationem illum ipsa ipsum libero maxime molestias natus non obcaecati officiis provident quas quis reprehenderit rerum suscipit tenetur, vel vero, vitae voluptatem voluptates voluptatibus voluptatum! Doloremque, non!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci beatae commodi cupiditate dolores eaque earum eius eos illo incidunt iusto laborum minima non omnis provident quaerat, quasi sed vel voluptatem voluptatibus? Animi aspernatur dicta in ipsam, ipsum maxime odit officia officiis quasi quia quo quod reprehenderit soluta sunt voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet atque dicta obcaecati omnis quam quas rerum sit velit veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid animi aspernatur consequuntur cum debitis delectus doloremque ea earum eveniet excepturi illum impedit inventore iste maxime, nam nesciunt nobis numquam odio odit officiis quae quibusdam quisquam quo ratione repellat sit tempore ullam velit voluptatem. Aut corporis enim excepturi facilis id pariatur provident quas quis repudiandae veniam! Earum eius exercitationem impedit maxime modi non nostrum officiis pariatur praesentium, quibusdam, repellendus suscipit velit voluptatum! Asperiores cum et incidunt magni maiores possimus provident, sint sit veritatis vitae. Aliquam animi asperiores at, aut cum debitis dolores eius error ex exercitationem facere fuga harum ipsa magni nam natus nesciunt odio perferendis quia rem repudiandae similique suscipit tenetur ullam ut? Amet, beatae culpa deleniti dolorum fugiat harum molestias possimus quidem quis sint suscipit temporibus totam vel? Architecto beatae culpa distinctio dolore eaque earum et facilis fugit harum ipsum labore magni minus, non nostrum numquam officiis perferendis quis quo quod reiciendis rerum ullam voluptas voluptate? Accusamus autem, beatae consectetur corporis cumque delectus dolorem eius esse excepturi fuga fugit incidunt laborum magnam mollitia nam nihil, non nulla obcaecati quaerat quam tempore temporibus tenetur vel! Accusamus assumenda deleniti ea, earum esse, illo minus natus nulla odio sunt ut vero!</p>
+            </div>
+        </div>
+        <button class="modal__close modal-close-js">
+            <svg class="icon">
+                <use xlink:href="#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<div class="path-list">
+    <div class="path-list__title">Путь по сайту (Site path)</div>
+    <ul>
+        <li><a href="https://alex-bilyk.github.io/oooksu/">Главная</a></li>
+        <li><a href="https://alex-bilyk.github.io/oooksu/contact.html">Контакты</a></li>
+        <li><a href="https://alex-bilyk.github.io/otzoviokon/services-sl.html">services-sl</a></li>
+        <li><a href="https://alex-bilyk.github.io/otzoviokon/company.html">company</a></li>
+        <li><a href="https://alex-bilyk.github.io/otzoviokon/blog.html">blog</a></li>
+        <li><a href="https://alex-bilyk.github.io/otzoviokon/article.html">article</a></li>
+        <li><a href="https://alex-bilyk.github.io/otzoviokon/article-single.html">article-single</a></li>
+    </ul>
+</div>
+
+<!-- Start block with js files-->
+<script src="js/jquery.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript">
+</script>
+<script src="js/main.js"></script>
+<!-- Finish block with js files-->
+</body>
+</html>
